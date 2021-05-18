@@ -17,7 +17,7 @@ poetry run sqlfluff lint
 If `pyproject.toml` is correctly being used for configuration, you should get the following error message:
 
 ```
-== [/home/edgarrmondragon/code/sqlfluff-example/example.sql] FAIL
+== [example.sql] FAIL
 L:   2 | P:   5 | L003 | Line over-indented compared to line #1
 L:   2 | P:  12 | L019 | Found trailing comma. Expected only leading.
 L:   3 | P:   5 | L003 | Line over-indented compared to line #1
