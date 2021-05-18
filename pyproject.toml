@@ -10,8 +10,11 @@ python = "^3.8"
 [tool.poetry.dev-dependencies]
 sqlfluff = {git = "https://github.com/edgarrmondragon/sqlfluff.git", rev = "feature/pyproject.toml"}
 
+[tool.sqlfluff.core]
+nocolor = false
+
 [tool.sqlfluff.rules]
-tab_space_size = 2
+tab_space_size = 4
 comma_style = "leading"
 
 [build-system]
