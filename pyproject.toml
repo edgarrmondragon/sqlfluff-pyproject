@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sqlfluff-example"
+version = "0.1.0"
+description = ""
+authors = ["Edgar R. Mondragón <edgarrm358@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+sqlfluff = {git = "https://github.com/edgarrmondragon/sqlfluff.git", rev = "feature/pyproject.toml"}
+
+[tool.sqlfluff.rules]
+tab_space_size = 2
+comma_style = "leading"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

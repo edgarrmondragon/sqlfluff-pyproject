@@ -1,0 +1,5 @@
+[sqlfluff]
+dialect = ansi
+
+[sqlfluff:rules]
+comma_style = trailing
